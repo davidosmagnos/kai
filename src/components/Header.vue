@@ -46,6 +46,7 @@
     .nav{
         color:white;
         padding-top:4.5em;
+        z-index: 2;
     }
     .nav ul{
         list-style: none;

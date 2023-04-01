@@ -1,17 +1,20 @@
 <template>
 	<div class="container">
 		<HeaderComp class="header"/>
+		<SliderComp/>
 	</div>
 	
 </template>
 
 <script>
 import HeaderComp from './components/Header.vue'
+import SliderComp from './components/Slider.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderComp
+    HeaderComp,
+	SliderComp
   }
 }
 </script>
@@ -33,5 +36,8 @@ export default {
 	}
 	.header{
 		width: 75vw;;
+	}
+	body{
+		overflow: hidden;
 	}
 </style>
