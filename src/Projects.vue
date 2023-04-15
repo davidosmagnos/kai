@@ -1,15 +1,21 @@
 <template>
-    <h1 class="h1">henlo</h1>
-    <!-- <Header/> -->
+    <div class="container">
+        <Header/>
+    </div>
 </template>
 <script>
-    // import Header from './components/Header.vue';
+    import Header from './components/Header.vue';
     export default{
         name:"projects-page",
-        
+        components:{
+            Header
+        }
     }
     
 </script>
 <style scoped>
-    
+    .container{
+        height: 100vh;
+        background-color: black;
+    }
 </style>

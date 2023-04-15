@@ -1,6 +1,6 @@
 <template>
        <div class="slide scrollUp">
-            <img v-for="pic in pictures" :key="pic" :src="getPic(pic)" alt=""/>
+            <img v-for="pic in pictures" :key="pic" :src="getPic(pic)" alt=""/>x
        </div>
        <div class="slide scrollDown">
             <img v-for="pic in pictures" :key="pic" :src="getPic(pic)" alt=""/>

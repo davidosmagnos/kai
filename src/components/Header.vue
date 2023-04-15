@@ -6,8 +6,8 @@
     </div>
         <div class="nav">
             <ul>
-                <a href="#"><li>home</li></a>
-                <a href="#"><li>project</li></a>
+                <a href="/"><li>home</li></a>
+                <a href="/projects"><li>project</li></a>
                 <a href="#"><li>contact</li></a>
             </ul>
         </div>

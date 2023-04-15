@@ -2,6 +2,13 @@
 	<div class="container">
 		<HeaderComp class="header"/>
 		<SliderComp/>
+        <footer class="footer">
+            <span>日本語の場合はランダムに生成された文章以外に</span>
+            <span>著作権が切れた小説などが利用されることもある。</span>
+            <span v-for="greet in greetList" :key="greet">
+                <PropComp :greeting="greet"/>
+            </span>
+        </footer>
 	</div>
 	
 </template>
@@ -9,12 +16,19 @@
 <script>
 import HeaderComp from './Header.vue'
 import SliderComp from './Slider.vue'
+import PropComp from './Prop.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComp,
-	SliderComp
+	SliderComp,
+    PropComp
+  },
+  data(){
+    return{
+        greetList:["fuck you","hi","wtf","henlo","shit"]
+    }
   }
 }
 </script>
@@ -25,6 +39,7 @@ export default {
 		padding:0;
 		box-sizing: border-box;
 		font-family: "Montserrat",sans-serif;
+        color:white;
 	}
 	.container{
 		background-color: black;
@@ -38,6 +53,14 @@ export default {
 		width: 75vw;;
 	}
 	body{
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding-left:5.5em;
+        position:absolute;
+        bottom:3em;
+    }
+
 </style>
