@@ -1,6 +1,8 @@
 <template>
 	<div class="container">
+        
 		<HeaderComp class="header"/>
+        <HeaderName class="header"/>
 		<SliderComp/>
         <footer class="footer">
             <span>日本語の場合はランダムに生成された文章以外に</span>
@@ -17,10 +19,12 @@
 import HeaderComp from './Header.vue'
 import SliderComp from './Slider.vue'
 import PropComp from './Prop.vue'
+import HeaderName from './HeaderName.vue'
 
 export default {
   name: 'App',
   components: {
+    HeaderName,
     HeaderComp,
 	SliderComp,
     PropComp

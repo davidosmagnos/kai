@@ -1,7 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import Projects from "./Projects.vue"
+import Contact from './Contact.vue'
 import Index from './components/Index.vue'
+
 import {createRouter,createWebHistory} from 'vue-router'
 
 var routes = [
@@ -14,6 +16,11 @@ var routes = [
         path:"/projects",
         name:"Projects",
         component:Projects
+    },
+    {
+        path:"/contact",
+        name:"Contact",
+        component:Contact
     }
 ]
 
